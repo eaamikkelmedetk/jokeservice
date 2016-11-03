@@ -1,10 +1,7 @@
 var express = require('express');
 var router = express.Router();
-var jokeController = require('../controllers/JokeController');
+var indexController = require("../controller/IndexController");
 
-/*
- * GET
- */
-router.get('/', jokeController.lndex);
+router.get('/', indexController.show);
 
 module.exports = router;
