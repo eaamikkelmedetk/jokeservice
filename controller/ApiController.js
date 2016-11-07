@@ -1,4 +1,5 @@
-'use strict';
+"use strict";
+
 var JokeModel = require('../models/JokeModel');
 
 /**
@@ -29,11 +30,9 @@ module.exports.addJoke = function(req, res) {
 };
 
 module.exports.getJoke = function(req, res) {
-    console.log(req.params.id);
     var jokeId = req.params.id;
     JokeModel.find({"_id": jokeId}).exec()
     .then(function(joke) {
-        return res.json({"joke": joke})
-    
-})
+        return res.json({"joke": joke})    
+    })
 };
