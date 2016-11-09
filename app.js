@@ -7,8 +7,8 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
-//mongoose.connect('mongodb://root:gummiand@ds035975.mlab.com:35975/jokedb');
-mongoose.connect('mongodb://root:gummiand@localhost/jokedb');
+mongoose.connect('mongodb://root:gummiand@ds035975.mlab.com:35975/jokedb');
+//mongoose.connect('mongodb://root:gummiand@localhost/jokedb');
 
 var site = require('./routes/site');
 var api = require('./routes/api');

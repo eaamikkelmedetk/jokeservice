@@ -7,11 +7,13 @@
   },
   "dependencies": {
     "async": "^2.1.2",
+    "autoprefixer": "^6.5.2",
     "body-parser": "~1.15.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.2.0",
     "express": "~4.14.0",
     "hbs": "~4.0.1",
+    "json-cleaner": "^1.0.0",
     "mongoose": "^4.6.5",
     "morgan": "~1.7.0",
     "request": "^2.76.0",
