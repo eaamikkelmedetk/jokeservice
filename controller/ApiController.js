@@ -10,7 +10,7 @@ var JokeModel = require('../models/JokeModel');
 module.exports.getJokes = function(req, res) {
     JokeModel.find().exec()
         .then(function(jokes) {
-            return res.json({"jokes": jokes});
+            return res.json(jokes);
         })
 };
 
